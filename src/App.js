@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 
 const SPELLS = ["Lumos", "Alohomora", "Accio", "Expecto Patronum", "Wingardium Leviosa"];
 
@@ -69,7 +69,6 @@ export default function HarryPotterPortfolio() {
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
   const [snitchPos, setSnitchPos] = useState({ x: 200, y: 200 });
   const [letterOpen, setLetterOpen] = useState(false);
-  const snitchRef = useRef(null);
 
   useEffect(() => {
     let angle = 0;
